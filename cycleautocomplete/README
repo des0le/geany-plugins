@@ -1,0 +1,65 @@
+==================
+Cycle-Autocomplete
+==================
+
+.. contents::
+
+
+About
+=====
+
+`Cycle-Autocomplete` is a plugin for the Geany text editor that provides inline autocompletion based on the words in the current document.
+
+
+Features
+--------
+
+- Inline autocompletion to be triggered manually
+- Keybindings for cycling back and forth through completions
+- Exact and fuzzy word matching
+- Configuration options
+
+
+Usage
+=====
+
+To make use of this plugin you first need to define keybindings for `Cycle autocomplete forward` and `Cycle autocomplete backward` in Geany's keybinding preferences.
+
+.. note::
+    To use `Escape` as trigger key you have to manually type ``Escape`` into the shortcut entry since the `Change` dialog will not work properly in this case.
+
+Unlike Geany's default autocompletion mechanism, `Cycle-Autocomplete` does not pop up a menu with viable options, but completes the current word inline. Repetitive invocation of `Cycle autocomplete forward` or `Cycle autocomplete backward` cycles through the list of matching options in the specified direction.
+
+The list of completions contains all words of the document that share a common prefix with the word currently under the cursor. If no words fulfil that condition, the list is extended by a fuzzy matching algorithm, such that e.g. ``acpl`` would yield ``auto_complete`` and ``AutoCompletion`` but not ``appliance``.
+
+By default `Cycle-Autocomplete` presents those completions first that are closest to the current word. The plugin's preference pane offers an option to change this to alphabetic order.
+
+In case you encounter performance issues or wish to have tighter control over the list of completions, you may limit the number of matches and set up a radius to restrict the search to words within a certain boundary.
+
+.. note::
+    A search radius of ``0`` executes the search on the whole document.
+
+You may further opt to skip the fuzzy matching if exact matches are found.
+
+When completing a word and the cursor is not positioned at the end, it can be specified whether or not to keep the trailing word part.
+
+
+License
+=======
+
+`Cycle-Autocomplete` is distributed under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+The source code is available from the `Geany Plugins Github repository <https://github.com/geany/geany-plugins>`_.
+
+
+Dependencies
+============
+
+- GTK+ >= 2.24
+- Geany >= 1.23 (it might work with earlier versions as well, but this has not been tested)
+
+
+Contact
+=======
+
+All requests regarding this plugin should be directed to <desole kabsi at>.

@@ -24,6 +24,9 @@ codenav/src/utils.c
 # commander
 commander/src/commander-plugin.c
 
+# cycleautocomplete
+cycleautocomplete/src/cycleautocomplete.c
+
 # debugger
 debugger/src/plugin.c
 debugger/src/vtree.c

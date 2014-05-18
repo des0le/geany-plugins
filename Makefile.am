@@ -19,6 +19,10 @@ if ENABLE_COMMANDER
 SUBDIRS += commander
 endif
 
+if ENABLE_CYCLEAUTOCOMPLETE
+SUBDIRS += cycleautocomplete
+endif
+
 if ENABLE_DEBUGGER
 SUBDIRS += debugger
 endif

@@ -35,6 +35,11 @@ M: Colomban Wendling <ban@herbesfolles.org>
 W:
 S: Maintained
 
+cycleautocomplete
+P: Yannick Lipp <desole@kabsi.at>
+M: Yannick Lipp <desole@kabsi.at>
+W: http://plugins.geany.org/cycleautocomplete.html
+S: Maintained
 
 debugger
 P: Alexander Petukhov <devel@apetukhov.ru>
@@ -211,9 +216,9 @@ W: http://plugins.geany.org/tableconvert.html
 S: Maintained
 
 treebrowser
-P: 
-M: 
-W: 
+P:
+M:
+W:
 S: Orphaned
 
 updatechecker
